@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shiba on 彌筆記 MiuNote</title>
+    <link>https://miunote.github.io/tags/shiba/</link>
+    <description>Recent content in Shiba on 彌筆記 MiuNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Tue, 08 Sep 2020 20:26:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://miunote.github.io/tags/shiba/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>彌的第一篇文章</title>
+      <link>https://miunote.github.io/blog/%E5%BD%8C%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</link>
+      <pubDate>Tue, 08 Sep 2020 20:26:10 +0800</pubDate>
+      
+      <guid>https://miunote.github.io/blog/%E5%BD%8C%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
+      <description>Hello World
+我是彌
+一級標題 二級標題 六級標題 我是彌，我喜歡學習
+ 彌  how  what     Hello   Hello  What   are you   Hello</description>
+    </item>
+    
+  </channel>
+</rss>
