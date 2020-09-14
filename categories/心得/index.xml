@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>心得 on 彌筆記 MiuNote</title>
+    <title>心得 on 個人習作 | MiuNote</title>
     <link>https://miunote.github.io/categories/%E5%BF%83%E5%BE%97/</link>
-    <description>Recent content in 心得 on 彌筆記 MiuNote</description>
+    <description>Recent content in 心得 on 個人習作 | MiuNote</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Thu, 10 Sep 2020 03:00:00 +0800</lastBuildDate>
@@ -12,25 +12,25 @@
     
     
     <item>
-      <title>彌的第二篇文章</title>
+      <title>我的第二篇文章</title>
       <link>https://miunote.github.io/blog/second-post/</link>
       <pubDate>Thu, 10 Sep 2020 03:00:00 +0800</pubDate>
       
       <guid>https://miunote.github.io/blog/second-post/</guid>
       <description>Hello World
-我是彌</description>
+我是Mui</description>
     </item>
     
     <item>
-      <title>彌的第一篇文章</title>
+      <title>我的第一篇文章</title>
       <link>https://miunote.github.io/blog/test/</link>
       <pubDate>Tue, 08 Sep 2020 20:26:10 +0800</pubDate>
       
       <guid>https://miunote.github.io/blog/test/</guid>
       <description>Hello World
-我是彌
-一級標題 二級標題 六級標題 我是彌，我喜歡學習
- 彌  how  what     Hello   Hello  What   are you   Hello</description>
+我是Mui
+一級標題 二級標題 六級標題 我是Mui，我喜歡學習
+ Mui  how  what     Hello   Hello  What   are you   Hello</description>
     </item>
     
   </channel>
