@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>個人習作 | MiuNote</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="forms．04-21 :root &amp; var">
+  <meta name="author" content="Miu">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://miunote.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://miunote.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://miunote.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://miunote.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://miunote.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://miunote.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://miunote.github.io/images/favicon.png " type="image/x-icon">
+
+  
+  
+</head><body class=" border-bottom-img">
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent pl-0 d-flex align-items-start mt-4">
+      
+
+      <div class="col-lg-9">
+        
+        <div class="widget">
+          <ul class="list-inline">
+            <li class="shadow-sm list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                href="/tags/CSS">CSS</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        
+        <div class="widget">
+          <div class="logo-bg">
+            <p class="mb-3">
+              <a href="/" class="logo-link">MiuNote</a><span class="spacing-line"></span><a href="/about" class="logo-link">About</a><span class="spacing-line"></span><button id="searchOpen" class="search-btn search-btn-border-0"><i class="ti-search"></i></button>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+
+
+
+      
+
+      
+
+        
+
+        
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          
+          <div class="search-wrapper">
+            <form action="https://miunote.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+
+
+
+
+  </div>
+</header>
+<!-- /navigation -->
+
+
+<section class="mt-4">
+  <div class="container">
+    <div class="row">
+
+
+      <div class="col-lg-8 mx-auto bg-white pt-4 shadow mb-20">
+        
+        <a href="/categories/%e5%88%bb%e6%84%8f%e7%b7%b4%e7%bf%92"
+          class="text-primary">刻意練習</a>
+        
+        <h1>備忘錄 待辦事項 便利貼．forms</h1>
+        <div class="mb-4 post-meta">
+          <span>By Miu</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 June 2021</span>
+                  
+          
+            
+            <span class="border-bottom border-primary px-2 mx-1"></span>  
+            <a href="/tags/CSS" class="">CSS</a>
+             
+           
+        </div>
+        
+        <img src="https://miunote.github.io/images/post/20210601-note.jpg" class="mb-4 w-iphonex" alt="備忘錄 待辦事項 便利貼">
+        
+        <div class="content mb-5">
+          <blockquote>
+<h2 id="a-href結構-hahahugoshortcode-s0-hbhba"><a href="#結構" >
+
+
+04-21 :root &amp; var
+
+
+
+
+</a></h2>
+<p><strong>設定顏色:</strong><br>
+:root 設定灰階色。該顏色可使用在全部的地方： &lt;html&gt; 裡面的 body<br>
+main 設定藍色系。該顏色只能用在自己的地方： &lt;main&gt; 裡面的 .space<br>
+<strong>套用顏色:</strong><br>
+使用 var() 來套用顏色。</p>
+</blockquote>
+<h3 id="結構"><strong>結構</strong></h3>
+<p style="margin-bottom: -5px;">參考：<a href="/blog/books_web-base_layout_0305/#boxed-版型">boxed 版型</a></p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#888;font-style:italic">&lt;!--
+</span><span style="color:#888;font-style:italic">boxed 版型: 新增內容方式是「把增加的內容區塊元素（&lt;section&gt;）包裏在一個固定的寬度（&lt;main&gt;）中」。
+</span><span style="color:#888;font-style:italic">--&gt;</span>
+&lt;<span style="color:#000">header</span>&gt;...&lt;/<span style="color:#000">header</span>&gt;
+&lt;<span style="color:#000">main</span>&gt;
+  &lt;<span style="color:#000">section</span> <span style="color:#000">class</span>=<span style="color:#5a2">&#34;note&#34;</span>&gt;（表單編輯區）&lt;/<span style="color:#000">section</span>&gt;
+  &lt;<span style="color:#000">section</span> <span style="color:#000">class</span>=<span style="color:#5a2">&#34;space&#34;</span>&gt;（項目瀏覽區）&lt;/<span style="color:#000">section</span>&gt;
+&lt;/<span style="color:#000">main</span>&gt;
+&lt;<span style="color:#000">footer</span>&gt;...&lt;<span style="color:#000">footer</span>&gt;
+</code></pre></div><h3 id="樣式"><strong>樣式</strong></h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">:<span style="color:#000">root</span>{
+  <span style="color:#888;font-style:italic">/* 設定灰階色: 黑、灰、白 */</span>
+  <span style="color:#000">--black-100</span>: <span style="color:#00f">black</span>;
+  <span style="color:#000">--black-90</span>: <span style="color:#3af">#1E1E1E</span>;
+  <span style="color:#000">--black-80</span>: <span style="color:#3af">#353535</span>;
+  <span style="color:#000">--black-70</span>: <span style="color:#3af">#4E4E4E</span>;
+  <span style="color:#000">--black-60</span>: <span style="color:#3af">#696969</span>;
+  <span style="color:#000">--black-50</span>: <span style="color:#3af">#858585</span>;
+  <span style="color:#000">--black-40</span>: <span style="color:#3af">#A2A2A2</span>;
+  <span style="color:#000">--black-30</span>: <span style="color:#3af">#C0C0C0</span>;
+  <span style="color:#000">--black-20</span>: <span style="color:#3af">#DFDFDF</span>;
+  <span style="color:#000">--black-10</span>: <span style="color:#3af">#F6F6F6</span>;
+  <span style="color:#000">--white-100</span>: <span style="color:#00f">white</span>;
+  <span style="color:#f00">…</span>
+}
+<span style="color:#f00">…</span>
+<span style="color:#000">body</span>{
+  <span style="color:#888;font-style:italic">/*套用灰階色*/</span>
+  <span style="color:#00f">background</span>: <span style="color:#000">var</span>(--<span style="color:#00f">black</span><span style="color:#3af">-20</span>);
+}
+<span style="color:#f00">…</span>
+<span style="color:#000">main</span>{
+  <span style="color:#f00">…</span>
+  <span style="color:#888;font-style:italic">/* 設定藍色系: 藍、深藍、淺藍 */</span>
+  <span style="color:#000">--primary-default</span>: <span style="color:#3af">#02A0E9</span>;
+  <span style="color:#000">--primary-dark</span>: <span style="color:#3af">#181677</span>;
+  <span style="color:#000">--primary-tint</span>: <span style="color:#3af">#C3E0F2</span>;  
+}
+<span style="color:#f00">…</span>
+.<span style="color:#000">space</span>{
+  <span style="color:#888;font-style:italic">/*套用淺藍色*/</span>
+  <span style="color:#00f">background</span>: <span style="color:#000">var</span>(--<span style="color:#000">primary</span>-<span style="color:#000">tint</span>);
+  <span style="color:#f00">…</span>
+}
+<span style="color:#f00">…</span>
+</code></pre></div><h3 id="程式碼"><strong>程式碼</strong></h3>
+<p><a target="_blank" href="https://codepen.io/miunote/pen/QWpGgVx">CSS練習：note - CodePen</a>
+
+
+<br>
+<iframe height="500" style="width: 100%; margin-bottom: 0;" scrolling="no" title="note" src="https://codepen.io/miunote/embed/QWpGgVx?height=500&theme-id=light&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/miunote/pen/QWpGgVx'>note</a> by miunote
+  (<a href='https://codepen.io/miunote'>@miunote</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe></p>
+<p></p>
+<h3 id="語法"><strong>語法</strong></h3>
+<p><a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/:root">:root - MDN</a>
+
+
+<br>
+<a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/var%28%29">var() - MDN</a>
+
+
+<br>
+<strong>補充</strong><br>
+- <a target="_blank" href="https://ithelp.ithome.com.tw/articles/10228111">:root 根目錄選取器 - 叫你阿爸出來講 - CSScoke</a>
+
+
+<br>
+- <a target="_blank" href="https://www.oxxostudio.tw/articles/202011/css-variables.html">深入理解 CSS 變數 ( CSS Variables ) - OXXO</a>
+
+
+</p>
+<h3 id="瀏覽器相容"><strong>瀏覽器相容</strong></h3>
+<p><a target="_blank" href="https://caniuse.com/mdn-css_selectors_root">:root 根目錄選取器 - CanIuse</a>
+
+
+<br>
+<a target="_blank" href="https://caniuse.com/css-variables">var() CSS變數 - CanIuse</a>
+
+
+</p>
+
+        </div>
+      </div>   
+      
+
+
+      <div class="col-lg-3">
+
+        <div class="widget mt-4">       
+          <div class="list-group">
+            
+                        
+            <a href="https://miunote.github.io/book/miu001_goldfish_css-selector/" class="list-group-item list-group-item-action text-left"><span class="badge bg-secondary">Book</span> 金魚都能懂的 CSS 選取器：金魚都能懂了你還怕學不會嗎</a>
+            
+
+            
+            <a href="https://miunote.github.io/blog/books_goldfish_css-selector-0420/" class="list-group-item list-group-item-action text-left">側滑列表</a>
+            
+            <a href="https://miunote.github.io/blog/books_goldfish_css-selector-0421/" class="list-group-item list-group-item-action text-left">備忘錄 待辦事項 便利貼</a>
+            
+          </div>
+        </div>
+        
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="col-lg-8 mx-auto pt-4 mb-80">
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "miunote" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<script>
+  var indexURL = "https://miunote.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://miunote.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/search/mark.js"></script>
+
+<script src="https://miunote.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://miunote.github.io/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-177532986-1', 'auto');
+  ga('send', 'pageview');
+</script></body>
+</html>

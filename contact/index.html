@@ -30,7 +30,7 @@
 
   
   
-</head><body>
+</head><body class=" border-bottom-img">
 <!-- preloader start -->
 <div class="preloader">
   
@@ -38,59 +38,49 @@
 <!-- preloader end -->
 <!-- navigation -->
 <header class="navigation">
+
   <div class="container">
     
-    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
-      <a class="navbar-brand mobile-view" href="https://miunote.github.io"><img class="img-fluid"
-          src="https://miunote.github.io/images/logo.png" alt="個人習作 | MiuNote"></a>
-      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
-        <i class="ti-menu h3"></i>
-      </button>
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent pl-0 d-flex align-items-start mt-4">
+      
 
-      <div class="collapse navbar-collapse text-center" id="navigation">
-        <div class="desktop-view">
-          <ul class="navbar-nav mr-auto">
-            
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.facebook.com/formosabanner/"><i class="ti-facebook"></i></a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/miunote"><i class="ti-github"></i></a>
-            </li>
-            
+      <div class="col-lg-9">
+        
+        <div class="widget">
+          <ul class="list-inline">
+            <li class="shadow-sm list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                href="/tags/CSS">CSS</a></li>
           </ul>
         </div>
+      </div>
 
-        <a class="navbar-brand mx-auto desktop-view" href="https://miunote.github.io"><img class="img-fluid"
-            src="https://miunote.github.io/images/logo.png" alt="個人習作 | MiuNote"></a>
+      <div class="col-lg-3">
+        
+        <div class="widget">
+          <div class="logo-bg">
+            <p class="mb-3">
+              <a href="/" class="logo-link">MiuNote</a><span class="spacing-line"></span><a href="/about" class="logo-link">About</a><span class="spacing-line"></span><button id="searchOpen" class="search-btn search-btn-border-0"><i class="ti-search"></i></button>
+            </p>
+            
+          </div>
+        </div>
+      </div>
 
-        <ul class="navbar-nav">
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="https://miunote.github.io/about">About</a>
-          </li>
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="https://miunote.github.io/blog">Post</a>
-          </li>
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="https://miunote.github.io/contact">Contact</a>
-          </li>
-          
-          
-        </ul>
+
+
+
+      
+
+      
+
+        
+
+        
 
         
         <!-- search -->
         <div class="search pl-lg-4">
-          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          
           <div class="search-wrapper">
             <form action="https://miunote.github.io/search" class="h-100">
               <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
@@ -103,35 +93,39 @@
         
       </div>
     </nav>
+
+
+
+
   </div>
 </header>
 <!-- /navigation -->
 
-<section class="section-sm pb-0">
+<section class="mt-4 mb-4">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
-        <h2>Get In Touch</h2>
-        <div class="content mb-4">
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea</p>
+        <div class="widget">
+          <h2>聯絡我／Contact Me</h2>
+          <div class="content mb-4">
+            <p>我會盡快與您聯絡的~</p>
 
-        </div>
-        <div class="row">
-          <div class="col-lg-4 small-post-border">
-            <i class="ti-mobile h1 text-primary"></i>
-            <h5 class="font-weight-light my-3">Phone</h5>
-            XXXXXXXX
-          </div>
-          <div class="col-lg-4 small-post-border">
-            <i class="ti-email h1 text-primary"></i>
-            <h5 class="font-weight-light my-3">Email</h5>
-            XXXX
-          </div>
-          <div class="col-lg-4 small-post-border">
-            <i class="ti-location-pin h1 text-primary"></i>
-            <h5 class="font-weight-light my-3">Location</h5>
-            Taiwan
-          </div>
+          </div>     
+          <iframe name="iframe_redirect" id="iframe_redirect" style="display:none;" onload="if(typeof sent_redirect!='undefined'){window.alert('資料已送出！');window.location='https:\/\/miunote.github.io';}"></iframe>   
+          <form onsubmit="sent_redirect=true" target="iframe_redirect"  class="row" action="xxxxx" method="post">
+            <div class="col-lg-6">
+              <input type="text" class="form-control mb-4" name="entry.1231500512" value="" placeholder="姓名 Your Name" required>
+            </div>
+            <div class="col-lg-6">
+              <input type="email" class="form-control mb-4" name="entry.1528292533" value="" placeholder="信箱 Your Email" required>
+            </div>
+            <div class="col-12">
+              <textarea class="form-control mb-4" name="entry.343833797" value="" placeholder="訊息描述 Your Message" required></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" name="button" value="submit">send message</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -139,32 +133,28 @@
 </section>
 
 
-<section class="section-sm pb-0">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        <h2 class="mb-4">Hi Write To Me</h2>
-        <form action="#" method="POST" class="row">
-          <div class="col-lg-6">
-            <input type="text" class="form-control mb-4" id="name" name="name" placeholder="Your Name">
-          </div>
-          <div class="col-lg-6">
-            <input type="email" class="form-control mb-4" id="email" name="email" placeholder="Your Email">
-          </div>
-          <div class="col-12">
-            <input type="text" class="form-control mb-4" id="subject" name="subject" placeholder="Subject">
-          </div>
-          <div class="col-12">
-            <textarea name="message" id="message" class="form-control mb-4" placeholder="Your Message"></textarea>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">send message</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

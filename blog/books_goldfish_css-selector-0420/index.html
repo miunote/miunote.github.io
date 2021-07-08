@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>個人習作 | MiuNote</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="list．04-20 :focus-within">
+  <meta name="author" content="Miu">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://miunote.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://miunote.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://miunote.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://miunote.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://miunote.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://miunote.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://miunote.github.io/images/favicon.png " type="image/x-icon">
+
+  
+  
+</head><body class=" border-bottom-img">
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent pl-0 d-flex align-items-start mt-4">
+      
+
+      <div class="col-lg-9">
+        
+        <div class="widget">
+          <ul class="list-inline">
+            <li class="shadow-sm list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                href="/tags/CSS">CSS</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        
+        <div class="widget">
+          <div class="logo-bg">
+            <p class="mb-3">
+              <a href="/" class="logo-link">MiuNote</a><span class="spacing-line"></span><a href="/about" class="logo-link">About</a><span class="spacing-line"></span><button id="searchOpen" class="search-btn search-btn-border-0"><i class="ti-search"></i></button>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+
+
+
+      
+
+      
+
+        
+
+        
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          
+          <div class="search-wrapper">
+            <form action="https://miunote.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+
+
+
+
+  </div>
+</header>
+<!-- /navigation -->
+
+
+<section class="mt-4">
+  <div class="container">
+    <div class="row">
+
+
+      <div class="col-lg-8 mx-auto bg-white pt-4 shadow mb-20">
+        
+        <a href="/categories/%e5%88%bb%e6%84%8f%e7%b7%b4%e7%bf%92"
+          class="text-primary">刻意練習</a>
+        
+        <h1>側滑列表．list</h1>
+        <div class="mb-4 post-meta">
+          <span>By Miu</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 June 2021</span>
+                  
+          
+            
+            <span class="border-bottom border-primary px-2 mx-1"></span>  
+            <a href="/tags/CSS" class="">CSS</a>
+             
+           
+        </div>
+        
+        <img src="https://miunote.github.io/images/post/20210704-swipe-list.png" class="mb-4 w-iphonex" alt="側滑列表">
+        
+        <div class="content mb-5">
+          <blockquote>
+<h2 id="a-href結構hahahugoshortcode-s0-hbhba"><a href="#結構">
+
+
+04-20 :focus-within
+
+
+
+
+</a></h2>
+<p><strong>子元素控制父元素:</strong><br>
+子元素 focus 狀態時，會觸發父元素 :focus-within 狀態<br>
+<strong>具 focus 的元素:</strong><br>
+<code>&lt;a href=&quot;#&quot;&gt;</code> <code>&lt;button&gt;</code> <code>&lt;input&gt;</code> <code>&lt;select&gt;</code> <code>&lt;div tabindex=&quot;0&quot;&gt;</code><br>
+<strong>模擬 onclick:</strong><br>
+使用 focus 模擬 onclick 互動效果</p>
+</blockquote>
+<h3 id="結構"><strong>結構</strong></h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">...
+&lt;<span style="color:#000">section</span>&gt;
+  &lt;<span style="color:#000">ul</span>&gt;
+    ...
+    &lt;<span style="color:#000">li</span>&gt;
+      &lt;<span style="color:#000">div</span> <span style="color:#000">class</span>=<span style="color:#5a2">&#34;text&#34;</span>&gt;文字內容 文字內容 文字內容&lt;/<span style="color:#000">div</span>&gt;
+      &lt;<span style="color:#000">div</span> <span style="color:#000">class</span>=<span style="color:#5a2">&#34;icon&#34;</span>&gt;&lt;<span style="color:#000">a</span> <span style="color:#000">href</span>=<span style="color:#5a2">&#34;#&#34;</span>&gt;&lt;<span style="color:#000">i</span>&gt;❮&lt;/<span style="color:#000">i</span>&gt;&lt;/<span style="color:#000">a</span>&gt;&lt;<span style="color:#000">a</span> <span style="color:#000">href</span>=<span style="color:#5a2">&#34;#&#34;</span>&gt;&lt;<span style="color:#000">i</span>&gt;✎&lt;/<span style="color:#000">i</span>&gt;&lt;/<span style="color:#000">a</span>&gt;&lt;<span style="color:#000">a</span> <span style="color:#000">href</span>=<span style="color:#5a2">&#34;#&#34;</span>&gt;&lt;<span style="color:#000">i</span>&gt;✖&lt;/<span style="color:#000">i</span>&gt;&lt;/<span style="color:#000">a</span>&gt;&lt;/<span style="color:#000">div</span>&gt;
+    &lt;/<span style="color:#000">li</span>&gt;
+    ...
+  &lt;/<span style="color:#000">ul</span>&gt;
+&lt;/<span style="color:#000">section</span>&gt;
+...
+</code></pre></div><h3 id="樣式"><strong>樣式</strong></h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f00">…</span>
+<span style="color:#000">li</span>:<span style="color:#000">focus-within</span>{
+  <span style="color:#888;font-style:italic">/* 父元素: 列表項目(li) */</span>
+  <span style="color:#00f">transform</span>: <span style="color:#000">translateX</span>( <span style="color:#000">var</span>(--<span style="color:#00f">icon</span>-<span style="color:#000">x</span>-<span style="color:#00f">start</span>) );
+  <span style="color:#00f">background-color</span>: <span style="color:#000">var</span>(--<span style="color:#00f">black</span><span style="color:#3af">-10</span>)
+}
+<span style="color:#f00">…</span>
+<span style="color:#000">li</span> .<span style="color:#000">icon</span> <span style="color:#000">a</span>:<span style="color:#000">focus</span>{
+  <span style="color:#888;font-style:italic">/* 子元素: 列表項目(li)的箭頭(❮)圖示 */</span>
+  <span style="color:#00f">background-color</span>: <span style="color:#000">var</span>(--<span style="color:#00f">black</span><span style="color:#3af">-30</span>);
+  <span style="color:#00f">color</span>: <span style="color:#3af">#fff</span>;  
+} 
+</code></pre></div><h3 id="程式碼"><strong>程式碼</strong></h3>
+<p><a target="_blank" href="https://codepen.io/miunote/pen/KKmwqWG">CSS練習：swipe list - CodePen</a>
+
+
+<br>
+<iframe height="500" style="width: 100%; margin-bottom: 0;" scrolling="no" title="note" src="https://codepen.io/miunote/embed/KKmwqWG?height=500&theme-id=light&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/miunote/pen/KKmwqWG'>note</a> by miunote
+  (<a href='https://codepen.io/miunote'>@miunote</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe></p>
+<p></p>
+<h3 id="語法"><strong>語法</strong></h3>
+<p><a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/:focus-within">:focus-within - MDN</a>
+
+
+<br>
+<a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/:focus">:focus - MDN</a>
+
+
+<br>
+<strong>補充</strong><br>
+- <a target="_blank" href="https://bitsofco.de/how-and-when-to-use-the-tabindex-attribute/#howtousetabindex">How and when to use the tabindex attribute - bitsofcode</a>
+
+
+（用tabindex屬性來設定Tab鍵順序）<br>
+- <a target="_blank" href="https://www.cnblogs.com/coco1s/p/9406413.html">神奇的选择器 :focus-within - ChokCoco</a>
+
+
+<br>
+- <a target="_blank" href="https://www.zhangxinxu.com/wordpress/2018/01/css-focus-within-pseudo-class-selector/">详细了解CSS :focus-within伪类及其交互应用 - 张鑫旭</a>
+
+
+</p>
+<h3 id="瀏覽器相容"><strong>瀏覽器相容</strong></h3>
+<p><a target="_blank" href="https://caniuse.com/css-focus-within">:focus-within 後代焦點狀態 - CanIuse</a>
+
+
+<br>
+<a target="_blank" href="https://caniuse.com/mdn-css_selectors_focus">:focus 焦點狀態 - CanIuse</a>
+
+
+</p>
+
+        </div>
+      </div>   
+      
+
+
+      <div class="col-lg-3">
+
+        <div class="widget mt-4">       
+          <div class="list-group">
+            
+                        
+            <a href="https://miunote.github.io/book/miu001_goldfish_css-selector/" class="list-group-item list-group-item-action text-left"><span class="badge bg-secondary">Book</span> 金魚都能懂的 CSS 選取器：金魚都能懂了你還怕學不會嗎</a>
+            
+
+            
+            <a href="https://miunote.github.io/blog/books_goldfish_css-selector-0420/" class="list-group-item list-group-item-action text-left">側滑列表</a>
+            
+            <a href="https://miunote.github.io/blog/books_goldfish_css-selector-0421/" class="list-group-item list-group-item-action text-left">備忘錄 待辦事項 便利貼</a>
+            
+          </div>
+        </div>
+        
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="col-lg-8 mx-auto pt-4 mb-80">
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "miunote" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<script>
+  var indexURL = "https://miunote.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://miunote.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/search/mark.js"></script>
+
+<script src="https://miunote.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://miunote.github.io/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-177532986-1', 'auto');
+  ga('send', 'pageview');
+</script></body>
+</html>

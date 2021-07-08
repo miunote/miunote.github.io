@@ -4,47 +4,47 @@
   
   <url>
     <loc>https://miunote.github.io/blog/</loc>
-    <lastmod>2020-09-10T03:00:00+08:00</lastmod>
+    <lastmod>2021-06-02T12:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://miunote.github.io/categories/</loc>
-    <lastmod>2020-09-10T03:00:00+08:00</lastmod>
+    <lastmod>2021-06-02T12:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://miunote.github.io/tags/good/</loc>
-    <lastmod>2020-09-10T03:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miunote.github.io/tags/shiba/</loc>
-    <lastmod>2020-09-10T03:00:00+08:00</lastmod>
+    <loc>https://miunote.github.io/tags/CSS/</loc>
+    <lastmod>2021-06-02T12:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://miunote.github.io/tags/</loc>
-    <lastmod>2020-09-10T03:00:00+08:00</lastmod>
+    <lastmod>2021-06-02T12:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://miunote.github.io/</loc>
-    <lastmod>2020-09-10T03:00:00+08:00</lastmod>
+    <lastmod>2021-06-02T12:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://miunote.github.io/categories/%E5%BF%83%E5%BE%97/</loc>
-    <lastmod>2020-09-10T03:00:00+08:00</lastmod>
+    <loc>https://miunote.github.io/categories/%E5%88%BB%E6%84%8F%E7%B7%B4%E7%BF%92/</loc>
+    <lastmod>2021-06-02T12:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://miunote.github.io/blog/second-post/</loc>
-    <lastmod>2020-09-10T03:00:00+08:00</lastmod>
+    <loc>https://miunote.github.io/blog/books_web-base_layout_0305/</loc>
+    <lastmod>2021-06-02T12:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://miunote.github.io/blog/test/</loc>
-    <lastmod>2020-09-08T20:26:10+08:00</lastmod>
+    <loc>https://miunote.github.io/blog/books_goldfish_css-selector-0420/</loc>
+    <lastmod>2021-06-01T12:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miunote.github.io/blog/books_goldfish_css-selector-0421/</loc>
+    <lastmod>2021-06-01T12:00:00+08:00</lastmod>
   </url>
   
   <url>
@@ -53,7 +53,7 @@
   </url>
   
   <url>
-    <loc>https://miunote.github.io/contact/</loc>
+    <loc>https://miunote.github.io/book/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url>
   
@@ -63,38 +63,18 @@
   </url>
   
   <url>
-    <loc>https://miunote.github.io/tags/game/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
+    <loc>https://miunote.github.io/book/miu002_web-base_layout/</loc>
+    <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://miunote.github.io/categories/go-language/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
+    <loc>https://miunote.github.io/contact/</loc>
+    <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://miunote.github.io/blog/post-13/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miunote.github.io/tags/html/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miunote.github.io/tags/new/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miunote.github.io/tags/photos/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miunote.github.io/tags/python/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
+    <loc>https://miunote.github.io/book/miu001_goldfish_css-selector/</loc>
+    <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url>
   
 </urlset>
