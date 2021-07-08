@@ -6,29 +6,29 @@
     <description>Recent content in Books on 個人習作 | MiuNote</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate>
+    <lastBuildDate>Fri, 09 Jul 2021 05:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://miunote.github.io/book/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>網頁就是這麼疊出來的！企劃與設計人員都該懂的版型X模組X樣式設計架構</title>
-      <link>https://miunote.github.io/book/miu002_web-base_layout/</link>
-      <pubDate>Tue, 29 Oct 2019 13:49:23 +0600</pubDate>
+      <link>https://miunote.github.io/book/miu002_web-base_layout-component/</link>
+      <pubDate>Fri, 09 Jul 2021 05:00:00 +0800</pubDate>
       
-      <guid>https://miunote.github.io/book/miu002_web-base_layout/</guid>
-      <description>CSS版型練習 03-05 fluid width．菜單．layout</description>
+      <guid>https://miunote.github.io/book/miu002_web-base_layout-component/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>金魚都能懂的 CSS 選取器：金魚都能懂了你還怕學不會嗎</title>
       <link>https://miunote.github.io/book/miu001_goldfish_css-selector/</link>
-      <pubDate>Tue, 29 Oct 2019 13:49:23 +0600</pubDate>
+      <pubDate>Fri, 09 Jul 2021 05:00:00 +0800</pubDate>
       
       <guid>https://miunote.github.io/book/miu001_goldfish_css-selector/</guid>
-      <description>CSS選取器練習 改自動化產生 不然變數改了 資料沒改到 &amp;mdash;&amp;ndash; markdown寫關於書籍作者其它資訊
-04-20 :focus-within．側滑列表．list
-04-21 :root &amp;amp; var．備忘錄 待辦事項 便利貼．forms</description>
+      <description>關於作者 李建杭 Amos Li（CSScoke）
+金魚系列：
+- 金魚都能懂的 CSS 選取器 - 金魚都能懂了你還怕學不會嗎- 金魚都能懂的Bootstrap5網頁框架開發- 金魚都能懂的網頁切版教學Bootstrap：</description>
     </item>
     
   </channel>
