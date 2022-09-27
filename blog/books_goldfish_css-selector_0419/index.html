@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-tw"><head>
   <meta charset="utf-8">
-  <title>CSS 側滑列表 - MiuNote 個人習作</title>
+  <title>CSS 單字卡遊戲 - MiuNote 個人習作</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="list．04-20 :focus-within">
+  <meta name="description" content="forms．04-19 ::placeholder">
   <meta name="author" content="Miu">
   <meta name="generator" content="Hugo 0.74.3" />
 
@@ -112,12 +112,12 @@
         <a href="/categories/%e5%88%bb%e6%84%8f%e7%b7%b4%e7%bf%92"
           class="text-primary">刻意練習</a>
         
-        <h1>側滑列表．list</h1>
+        <h1>單字卡遊戲．forms</h1>
         <div class="mb-4 post-meta">
           <span>By Miu</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>09 July 2021</span>
+          <span>20 September 2022</span>
                   
           
             
@@ -127,93 +127,76 @@
            
         </div>
         
-        <img src="https://miunote.github.io/images/post/20210704-swipe-list.png" class="mb-4" alt="側滑列表">
+        <img src="https://miunote.github.io/images/post/20220920-word-card-game.jpg" class="mb-4" alt="單字卡遊戲">
         
         <div class="content mb-5">
           <blockquote>
 <h2 id="a-href結構hahahugoshortcode-s0-hbhba"><a href="#結構">
 
 
-04-20 :focus-withina
+04-19 ::placeholdera
 
 
 
 
 </a></h2>
-<p><strong>子元素控制父元素:</strong><br>
-子元素 focus 狀態時，會觸發父元素 :focus-within 狀態<br>
-<strong>具 focus 的元素:</strong><br>
-<code>&lt;a href=&quot;#&quot;&gt;</code> <code>&lt;button&gt;</code> <code>&lt;input&gt;</code> <code>&lt;select&gt;</code> <code>&lt;div tabindex=&quot;0&quot;&gt;</code><br>
-<strong>模擬 onclick:</strong><br>
-使用 focus 模擬 onclick 互動效果</p>
+<p><strong>輸入框內顯示「提醒文字」:</strong><br>
+<code>&lt;input type=&quot;text&quot;&gt;</code> 使用 placeholder 屬性來設定要顯示給使用者看的文字<br>
+<strong>輸入框樣式限「字體、背景」有關的 CSS 屬性 :</strong><br>
+僅小部份 CSS 屬性可使用，常用有 color、font-size、font-style，更多可參考 <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/::first-line" rel="noopener noreferrer">::first-line</a>
+
+
+ 允許的屬性值</p>
 </blockquote>
 <h3 id="結構"><strong>結構</strong></h3>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">...
 &lt;<span style="color:#000">section</span>&gt;
-  &lt;<span style="color:#000">ul</span>&gt;
+  &lt;<span style="color:#000">fieldset</span>&gt;
     ...
-    &lt;<span style="color:#000">li</span>&gt;
-      &lt;<span style="color:#000">div</span> <span style="color:#000">class</span>=<span style="color:#5a2">&#34;text&#34;</span>&gt;文字內容 文字內容 文字內容&lt;/<span style="color:#000">div</span>&gt;
-      &lt;<span style="color:#000">div</span> <span style="color:#000">class</span>=<span style="color:#5a2">&#34;icon&#34;</span>&gt;&lt;<span style="color:#000">a</span> <span style="color:#000">href</span>=<span style="color:#5a2">&#34;#&#34;</span>&gt;&lt;<span style="color:#000">i</span>&gt;❮&lt;/<span style="color:#000">i</span>&gt;&lt;/<span style="color:#000">a</span>&gt;&lt;<span style="color:#000">a</span> <span style="color:#000">href</span>=<span style="color:#5a2">&#34;#&#34;</span>&gt;&lt;<span style="color:#000">i</span>&gt;✎&lt;/<span style="color:#000">i</span>&gt;&lt;/<span style="color:#000">a</span>&gt;&lt;<span style="color:#000">a</span> <span style="color:#000">href</span>=<span style="color:#5a2">&#34;#&#34;</span>&gt;&lt;<span style="color:#000">i</span>&gt;✖&lt;/<span style="color:#000">i</span>&gt;&lt;/<span style="color:#000">a</span>&gt;&lt;/<span style="color:#000">div</span>&gt;
-    &lt;/<span style="color:#000">li</span>&gt;
+    &lt;<span style="color:#000">h2</span>&gt;&lt;<span style="color:#000">input</span> <span style="color:#000">class</span>=<span style="color:#5a2">&#34;input-txt&#34;</span> <span style="color:#000">type</span>=<span style="color:#5a2">&#34;text&#34;</span> <span style="color:#000">placeholder</span>=<span style="color:#5a2">&#34;請輸入英文 → Enter&#34;</span> <span style="color:#f00">...</span> <span style="color:#000">onkeypress</span>=<span style="color:#5a2">&#34;…&#34;</span>&gt;&lt;/<span style="color:#000">h2</span>&gt;  
     ...
-  &lt;/<span style="color:#000">ul</span>&gt;
+  &lt;/<span style="color:#000">fieldset</span>&gt;
 &lt;/<span style="color:#000">section</span>&gt;
 ...
 </code></pre></div><h3 id="樣式"><strong>樣式</strong></h3>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f00">…</span>
-<span style="color:#000">li</span>:<span style="color:#000">focus-within</span>{
-  <span style="color:#888;font-style:italic">/* 父元素: 列表項目（li） */</span>
-  <span style="color:#00f">transform</span>: <span style="color:#000">translateX</span>( <span style="color:#000">var</span>(--<span style="color:#00f">icon</span>-<span style="color:#000">x</span>-<span style="color:#00f">start</span>) );
-  <span style="color:#00f">background-color</span>: <span style="color:#000">var</span>(--<span style="color:#00f">black</span><span style="color:#3af">-10</span>)
+.<span style="color:#000">input-txt</span>{
+  <span style="color:#00f">line-height</span>: <span style="color:#3af">2</span>;
 }
-<span style="color:#f00">…</span>
-<span style="color:#000">li</span> .<span style="color:#000">icon</span> <span style="color:#000">a</span>:<span style="color:#000">focus</span>{
-  <span style="color:#888;font-style:italic">/* 子元素: 列表項目的箭頭圖示（❮） */</span>
-  <span style="color:#00f">background-color</span>: <span style="color:#000">var</span>(--<span style="color:#00f">black</span><span style="color:#3af">-30</span>);
-  <span style="color:#00f">color</span>: <span style="color:#3af">#fff</span>;  
-} 
+<span style="color:#000">input</span>::<span style="color:#000">placeholder</span> {
+  <span style="color:#00f">color</span>: <span style="color:#000">var</span>(--<span style="color:#00f">black</span><span style="color:#3af">-50</span>);
+  <span style="color:#00f">background</span>: <span style="color:#000">var</span>(--<span style="color:#00f">black</span><span style="color:#3af">-20</span>);
+  <span style="color:#00f">padding</span>: <span style="color:#3af">10</span><span style="color:#00f">px</span> <span style="color:#3af">0</span>; <span style="color:#888;font-style:italic">/*解決輸入框的多餘白邊*/</span>
+}
 </code></pre></div><h3 id="程式碼"><strong>程式碼</strong></h3>
-<p><a target="_blank" href="https://codepen.io/miunote/pen/KKmwqWG" rel="noopener noreferrer">CSS list：swipe list - CodePen</a>
+<p><a target="_blank" href="https://codepen.io/miunote/pen/OJZjMqw" rel="noopener noreferrer">CSS forms：word card game - CodePen</a>
 
 
 <br>
-<iframe height="500" style="width: 100%; margin-bottom: 0;" scrolling="no" title="note" src="https://codepen.io/miunote/embed/KKmwqWG?height=500&theme-id=light&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/miunote/pen/KKmwqWG'>note</a> by miunote
+<iframe height="500" style="width: 100%; margin-bottom: 0;" scrolling="no" title="note" src="https://codepen.io/miunote/embed/OJZjMqw?height=500&theme-id=light&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/miunote/pen/OJZjMqw'>note</a> by miunote
   (<a href='https://codepen.io/miunote'>@miunote</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe></p>
 <p></p>
 <h3 id="語法"><strong>語法</strong></h3>
-<p><a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/:focus-within" rel="noopener noreferrer">:focus-within - MDN</a>
-
-
-<br>
-<a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/:focus" rel="noopener noreferrer">:focus - MDN</a>
+<p><a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/::placeholder" rel="noopener noreferrer">::placeholder - MDN</a>
 
 
 <br>
 <strong>補充</strong><br>
-- <a target="_blank" href="https://bitsofco.de/how-and-when-to-use-the-tabindex-attribute/#howtousetabindex" rel="noopener noreferrer">How and when to use the tabindex attribute - bitsofcode</a>
-
-
-（用tabindex屬性來設定Tab鍵順序）<br>
-- <a target="_blank" href="https://www.cnblogs.com/coco1s/p/9406413.html" rel="noopener noreferrer">神奇的选择器 :focus-within - ChokCoco</a>
+- <a target="_blank" href="https://blog.csdn.net/a460550542/article/details/77916730" rel="noopener noreferrer">input框的placeholder使用line-height在Safari上不垂直居中的問題 - liu__software</a>
 
 
 <br>
-- <a target="_blank" href="https://www.zhangxinxu.com/wordpress/2018/01/css-focus-within-pseudo-class-selector/" rel="noopener noreferrer">详细了解CSS :focus-within伪类及其交互应用 - 张鑫旭</a>
+- <a target="_blank" href="https://blog.csdn.net/weixin_33547353/article/details/117863511" rel="noopener noreferrer">網頁html基線對齊,深入理解CSS中的vertical-align屬性和基線問題 - 對方真在想你 - 轉載</a>
 
 
 </p>
 <h3 id="瀏覽器相容"><strong>瀏覽器相容</strong></h3>
-<p><a target="_blank" href="https://caniuse.com/css-focus-within" rel="noopener noreferrer">:focus-within 後代焦點狀態 - CanIuse</a>
+<a target="_blank" href="https://caniuse.com/?search=%3A%3Aplaceholder" rel="noopener noreferrer">::placeholder 輸入框內顯示預設文字 - CanIuse</a>
 
 
-<br>
-<a target="_blank" href="https://caniuse.com/mdn-css_selectors_focus" rel="noopener noreferrer">:focus 焦點狀態 - CanIuse</a>
 
-
-</p>
 
         </div>
       </div>   
