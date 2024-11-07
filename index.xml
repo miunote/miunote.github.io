@@ -6,10 +6,40 @@
     <description>Recent content on MiuNote 個人習作</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 25 Sep 2024 05:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 06 Nov 2024 07:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://miunote.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>最新消息 活動公告</title>
+      <link>https://miunote.github.io/blog/books_web-base_jquery-mobile_0104/</link>
+      <pubDate>Wed, 06 Nov 2024 07:00:00 +0800</pubDate>
+      
+      <guid>https://miunote.github.io/blog/books_web-base_jquery-mobile_0104/</guid>
+      <description>01-04 semantic elements &amp;lt;header&amp;gt; 頁首區塊
+&amp;lt;main&amp;gt; 主要區塊
+&amp;lt;section&amp;gt; 章節區塊</description>
+    </item>
+    
+    <item>
+      <title>HTML5 &#43; CSS3 &#43; jQuery Mobile 輕鬆打造 App 與行動網站, 2/e</title>
+      <link>https://miunote.github.io/book/miu005_web-base_jquery-mobile/</link>
+      <pubDate>Wed, 23 Oct 2024 05:00:00 +0800</pubDate>
+      
+      <guid>https://miunote.github.io/book/miu005_web-base_jquery-mobile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>二道門 門把手</title>
+      <link>https://miunote.github.io/blog/books_ps-effects-example_business_0403/</link>
+      <pubDate>Mon, 07 Oct 2024 07:00:00 +0800</pubDate>
+      
+      <guid>https://miunote.github.io/blog/books_ps-effects-example_business_0403/</guid>
+      <description>04-03 motion effect 文件尺寸:
+890 x 630 px</description>
+    </item>
     
     <item>
       <title>Photoshop CS2 商業平面設計完全攻略</title>
@@ -41,16 +71,6 @@
       <description>1-001 polka dot 圓點: 替換圖案
 雨滴: 加入圖案
 半圓: 刪除圖案</description>
-    </item>
-    
-    <item>
-      <title>二道門 門把手</title>
-      <link>https://miunote.github.io/blog/books_ps-effects-example_business_0403/</link>
-      <pubDate>Fri, 09 Jul 2021 05:00:00 +0800</pubDate>
-      
-      <guid>https://miunote.github.io/blog/books_ps-effects-example_business_0403/</guid>
-      <description>04-03 motion effect 文件尺寸:
-890 x 630 px</description>
     </item>
     
     <item>

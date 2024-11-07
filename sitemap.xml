@@ -3,8 +3,68 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://miunote.github.io/blog/</loc>
+    <lastmod>2024-11-06T07:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miunote.github.io/categories/</loc>
+    <lastmod>2024-11-06T07:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miunote.github.io/tags/HTML5/</loc>
+    <lastmod>2024-11-06T07:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miunote.github.io/index_cards/</loc>
+    <lastmod>2024-11-06T07:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://miunote.github.io/</loc>
-    <lastmod>2024-09-25T05:00:00+08:00</lastmod>
+    <lastmod>2024-11-06T07:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miunote.github.io/tags/</loc>
+    <lastmod>2024-11-06T07:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miunote.github.io/index_cards/template/</loc>
+    <lastmod>2024-11-06T07:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miunote.github.io/categories/%E5%88%BB%E6%84%8F%E7%B7%B4%E7%BF%92/</loc>
+    <lastmod>2024-11-06T07:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miunote.github.io/blog/books_web-base_jquery-mobile_0104/</loc>
+    <lastmod>2024-11-06T07:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miunote.github.io/book/miu005_web-base_jquery-mobile/</loc>
+    <lastmod>2024-10-23T05:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miunote.github.io/tags/Graphic/</loc>
+    <lastmod>2024-10-07T07:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miunote.github.io/index_cards/photoshop/</loc>
+    <lastmod>2024-10-07T07:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miunote.github.io/blog/books_ps-effects-example_business_0403/</loc>
+    <lastmod>2024-10-07T07:00:00+08:00</lastmod>
   </url>
   
   <url>
@@ -13,27 +73,7 @@
   </url>
   
   <url>
-    <loc>https://miunote.github.io/blog/</loc>
-    <lastmod>2022-09-20T05:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miunote.github.io/categories/</loc>
-    <lastmod>2022-09-20T05:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://miunote.github.io/tags/CSS/</loc>
-    <lastmod>2022-09-20T05:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miunote.github.io/tags/</loc>
-    <lastmod>2022-09-20T05:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miunote.github.io/categories/%E5%88%BB%E6%84%8F%E7%B7%B4%E7%BF%92/</loc>
     <lastmod>2022-09-20T05:00:00+08:00</lastmod>
   </url>
   
@@ -43,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://miunote.github.io/tags/Graphic/</loc>
+    <loc>https://miunote.github.io/index_cards/illustrator/</loc>
     <lastmod>2021-07-30T05:00:00+08:00</lastmod>
   </url>
   
@@ -64,16 +104,6 @@
   
   <url>
     <loc>https://miunote.github.io/search/</loc>
-    <lastmod>2021-07-09T05:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miunote.github.io/tags/Visual/</loc>
-    <lastmod>2021-07-09T05:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miunote.github.io/blog/books_ps-effects-example_business_0403/</loc>
     <lastmod>2021-07-09T05:00:00+08:00</lastmod>
   </url>
   

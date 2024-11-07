@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Index_cards on MiuNote 個人習作</title>
+    <link>https://miunote.github.io/index_cards/</link>
+    <description>Recent content in Index_cards on MiuNote 個人習作</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 06 Nov 2024 07:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://miunote.github.io/index_cards/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>template</title>
+      <link>https://miunote.github.io/index_cards/template/</link>
+      <pubDate>Wed, 06 Nov 2024 07:00:00 +0800</pubDate>
+      
+      <guid>https://miunote.github.io/index_cards/template/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>photoshop</title>
+      <link>https://miunote.github.io/index_cards/photoshop/</link>
+      <pubDate>Mon, 07 Oct 2024 07:00:00 +0800</pubDate>
+      
+      <guid>https://miunote.github.io/index_cards/photoshop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>illustrator</title>
+      <link>https://miunote.github.io/index_cards/illustrator/</link>
+      <pubDate>Fri, 30 Jul 2021 05:00:00 +0800</pubDate>
+      
+      <guid>https://miunote.github.io/index_cards/illustrator/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

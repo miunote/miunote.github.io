@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>HTML5 最新消息 活動公告 - MiuNote 個人習作</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="card．01-04 semantic elements">
+  <meta name="author" content="Miu">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://miunote.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://miunote.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://miunote.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://miunote.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://miunote.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://miunote.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://miunote.github.io/images/favicon.png " type="image/x-icon">
+
+  
+  
+</head><body class=" border-bottom-img">
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent pl-0 d-flex align-items-start mt-4">
+      
+
+      <div class="col-lg-9">
+        
+        <div class="widget">
+          <ul class="list-inline">
+            <li class="shadow-sm list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                href="/tags/CSS">CSS</a></li>
+            <li class="shadow-sm list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                href="/tags/Graphic">Graphic</a></li>
+            <li class="shadow-sm list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                href="/tags/HTML5">HTML5</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        
+        <div class="widget">
+          <div class="logo-bg">
+            <p class="mb-3">
+              <a href="/" class="logo-link">MiuNote</a><span class="spacing-line"></span><a href="/about" class="logo-link">About</a><span class="spacing-line"></span><button id="searchOpen" class="search-btn search-btn-border-0"><i class="ti-search"></i></button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      
+
+      
+
+        
+
+        
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          
+          <div class="search-wrapper">
+            <form action="https://miunote.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+
+
+
+
+  </div>
+</header>
+<!-- /navigation -->
+
+
+<section class="mt-4">
+  <div class="container">
+    <div class="row">
+
+
+      <div class="col-lg-8 mx-auto bg-white pt-4 shadow mb-20">
+        
+        <a href="/categories/%e5%88%bb%e6%84%8f%e7%b7%b4%e7%bf%92"
+          class="text-primary">刻意練習</a>
+        
+        <h1>最新消息 活動公告．card</h1>
+        <div class="mb-4 post-meta">
+          <span>By Miu</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>06 November 2024</span>
+                  
+          
+            
+            <span class="border-bottom border-primary px-2 mx-1"></span>  
+            <a href="/tags/HTML5" class="">HTML5</a>
+             
+           
+        </div>
+        
+        <img src="https://miunote.github.io/images/post/20241101-news&amp;events.jpg" class="mb-4" alt="最新消息 活動公告">
+        
+        <div class="content mb-5">
+          <blockquote>
+<h2 id="a-href結構hahahugoshortcode-s0-hbhba"><a href="#結構">
+
+
+01-04 semantic elements
+
+
+
+
+</a></h2>
+<p><code>&lt;header&gt;</code> 頁首區塊<br>
+<code>&lt;main&gt;</code> 主要區塊<br>
+<code>&lt;section&gt;</code> 章節區塊<br>
+<code>&lt;article&gt;</code> 文章區塊<br>
+<code>&lt;aside&gt;</code> 側邊欄區塊<br>
+<code>&lt;details&gt;、&lt;summary&gt;</code> 收折文字內容<br>
+<code>&lt;figure&gt;、&lt;figcaption&gt;</code> 引用區塊<br>
+<code>&lt;footer&gt;</code> 頁尾區塊<br>
+<code>&lt;nav&gt;</code> 導覽連結區塊<br>
+<code>&lt;time&gt;</code> 標示時間日期</p>
+</blockquote>
+<h3 id="筆記"><strong>筆記</strong></h3>
+<p><strong>序</strong><br>
+<code>跨平台跨裝置 ( Write-Once, Run Anywhere )</code><br>
+- jQueryMobile 解決介面設計。<br>
+- HTML5 網頁應用程式的 API 與 JavaScript 搭配使用。<br>
+<code>範例「甜點坊、記事本」實作方式</code><br>
+(1) jQueryMobile 製作 Mobile APP ( 行動應用程式 )。<br>
+(2) Web Storage + Web SQL Database 存取資料。<br>
+(3) Apache Cordova 網頁封裝成 Android APP。<br>
+<strong>1-1 認識 HTML5</strong><br>
+<code>HTML5</code><br>
+- &lt;!DOCTYPE html&gt; 宣告為 HTML 文件。<br>
+- 內嵌影音使用 &lt;video&gt; 或 &lt;audio&gt;，不需安裝外掛。<br>
+- 新增結構標記「&lt;header&gt;、&lt;footer&gt;、&lt;section&gt;、&lt;article&gt;」有利於 SEO。<br>
+- 廢除網頁美化標記「&lt;font&gt;、&lt;big&gt;、&lt;u&gt;…」但會拿來當結構給 javascript 呼叫。<br>
+- 全新的表單元件＆屬性 ( input type )、&lt;form&gt; 增加許多屬性。<br>
+- 利用&lt;canvas&gt;標記繪出圖形，搭配 JavaScript 在網頁上畫出線條、圖形。<br>
+- 提供 API 開發網頁應用程式，例如「Web SQL Database」可離線存取本地端的資料庫。<br>
+<code>HTML5 廢除的標記</code><br>
+- &lt;applet&gt;：改用 &lt;embed&gt; 或 &lt;object&gt; ( 內嵌 Java Applet )<br>
+- &lt;acronym&gt;：改用 &lt;abbr&gt; ( 縮寫字詞 )<br>
+- &lt;dir&gt;：改用 &lt;ul&gt; ( 符號清單 )<br>
+- &lt;frame&gt;&lt;frameset&gt;&lt;noframes&gt;：改用 CSS 搭配 &lt;iframe&gt; ( 頁框設定/頁框宣告/瀏覽器不支援框架時顯示 )<br>
+- &lt;bgsound&gt;：插入背景音樂，改用 &lt;audio&gt;<br>
+網頁美化標記 ( 改用 CSS 負責樣式美化 )：<br>
+- &lt;basefont&gt; 指定基本字體<br>
+- &lt;big&gt; 放大字體<br>
+- &lt;center&gt; 置中<br>
+- &lt;font&gt; 文字格式設定<br>
+- &lt;marquee&gt; 跑馬燈文字<br>
+- &lt;s&gt;、&lt;strike&gt; 刪除線<br>
+- &lt;spacer&gt; 插入空白<br>
+- &lt;tt&gt; 等寬字體顯示<br>
+- &lt;u&gt; 加底線</p>
+<p><strong>補充</strong><br>
+- <a target="_blank" href="https://medium.com/ui-ux%E7%B7%B4%E5%8A%9F%E5%9D%8A/html5-%E6%96%B0%E5%A2%9E%E7%9A%84%E8%A1%A8%E5%96%AE%E5%85%83%E4%BB%B6-%E5%B1%AC%E6%80%A7-3d7c4f5688a2" rel="noopener noreferrer">HTML5 新增的表單元件＆屬性 - by Sandy (UI/UX練功坊)</a>
+
+
+<br>
+- <a target="_blank" href="https://www.cnblogs.com/wzh2010/archive/2012/05/20/2509785.html" rel="noopener noreferrer">HTML5專案筆記2：離線系統表單設計 - Hello-Brand</a>
+
+
+<br>
+- <a target="_blank" href="https://www.webdong.dev/post/html-form/" rel="noopener noreferrer">簡單明確的了解HTML 表單使用方式 - 網頁東東</a>
+
+
+</p>
+<p><strong>1-2 學習 HTML 前的準備工作</strong><br>
+<code>建立 HTML</code><br>
+- 瀏覽器 ( Chrome … )。<br>
+- 文字編輯軟體 ( Notepad++ … )。<br>
+- HTML 文件 ( index.html )：</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#888;font-style:italic">&lt;!doctype html&gt;</span>
+&lt;<span style="color:#000">html</span> <span style="color:#000">lang</span>=<span style="color:#5a2">&#34;zh-TW&#34;</span>&gt;
+&lt;<span style="color:#000">head</span>&gt;
+&lt;<span style="color:#000">meta</span> <span style="color:#000">charset</span>=<span style="color:#5a2">&#34;utf-8&#34;</span>&gt;
+&lt;<span style="color:#000">title</span>&gt;我的第一個網頁&lt;/<span style="color:#000">title</span>&gt;
+&lt;/<span style="color:#000">head</span>&gt;
+&lt;<span style="color:#000">body</span>&gt;
+Hello World ~
+&lt;/<span style="color:#000">body</span>&gt;
+&lt;/<span style="color:#000">html</span>&gt;
+</code></pre></div><p><code>預覽 HTML</code><br>
+將 index.html 拖曳到瀏覽器 ( Chrome … ) 內瀏覽<br>
+<strong>1-3 HTML 語法概念與架構</strong><br>
+<code>HTML 標記</code><br>
+- 圍堵標記 ( Container Tags )：&lt;起始標記&gt;…&lt;/終止標記&gt; 例如 &lt;html&gt;…&lt;/html&gt;。<br>
+- 單一標記( Single Tag )：起始標記有「&lt;hr&gt;、&lt;img&gt;」、終止標記有「&lt;hr /&gt;、&lt;img /&gt;」<br>
+<code>HTML 組成</code><br>
+- &lt;html&gt;：HTML 文件的根元素<br>
+- &lt;head&gt;：&lt;head&gt;元素放置網頁相關資訊，裡面常用的標記有 &lt;title&gt;、&lt;meta&gt;、&lt;link&gt;、&lt;script&gt;、&lt;style&gt;<br>
+- &lt;body&gt;：&lt;body&gt;元素放置網頁內容<br>
+<code>標記屬性 ( 以空白隔開不同屬性 )</code><br>
+&lt;起始標記 屬性名稱1=設定值1 屬性名稱2=設定值2 ………&gt;<br>
+&lt;meta name=&quot;keywords&rdquo; content=&quot;html5, css3, jquery mobile&rdquo;&gt;<br>
+<code>tips</code><br>
+- HTML 標記不分大小寫，建議以小寫為佳。<br>
+- 標記屬性同樣不區分大小寫。<br>
+<strong>1-4 HTML5 文件結構與語意標記</strong><br>
+<code>W3C 網頁開發標準</code><br>
+(1) 結構 Structure (HTML)<br>
+(2) 表現 Presentation (CSS)<br>
+(3) 行為 Behavior (JavaScript)<br>
+<code>結構化的語意標記</code><br>
+- &lt;header&gt; 顯示網站名稱、主題或是主要資訊<br>
+- &lt;nav&gt; 網站的連結選單<br>
+- &lt;aside&gt; 使用於側邊欄<br>
+- &lt;article&gt; 用於定義主內容區<br>
+- &lt;section&gt; 用於章節或段落<br>
+- &lt;footer&gt; 位於頁尾，用來放置版權宣告、作者等資訊</p>
+<p><strong>補充</strong><br>
+- <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics" rel="noopener noreferrer">Semantics - MDN Web Docs Glossary: Definitions of ... - Mozilla</a>
+
+
+<br>
+- <a target="_blank" href="https://shoujhengduan.medium.com/html-section-%E7%9A%84%E7%94%A8%E6%B3%95-15a171cc1350" rel="noopener noreferrer">Section 的用法 - SC Tuan</a>
+
+
+<br>
+- <a target="_blank" href="https://ithelp.ithome.com.tw/m/articles/10318479" rel="noopener noreferrer">( Day 15.4 ) HTML 收折文字內容 &lt;details&gt;、&lt;summary&gt; - oxxo - iThome</a>
+
+
+<br>
+- <a target="_blank" href="https://steam.oxxostudio.tw/category/html/tags/figure.html" rel="noopener noreferrer">引用區塊&lt;figure&gt;、&lt;figcaption&gt; - HTML 教學 - oxxo.studio</a>
+
+
+<br>
+- <a target="_blank" href="https://developer.mozilla.org/zh-TW/docs/Web/HTML/Element/hgroup" rel="noopener noreferrer">&lt;hgroup&gt;：標題群組元素- HTML：超文本標記語言 - MDN Web Docs</a>
+
+
+</p>
+<hr>
+<h3 id="結構"><strong>結構</strong></h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000">main</span>&gt;
+
+  <span style="color:#888;font-style:italic">&lt;!--頁頭--&gt;</span>
+  &lt;<span style="color:#000">header</span>&gt;
+    &lt;<span style="color:#000">hgroup</span>&gt;
+      &lt;<span style="color:#000">h1</span>&gt;<span style="color:#888;font-style:italic">&lt;!--標題--&gt;</span>&lt;/<span style="color:#000">h1</span>&gt;
+      &lt;<span style="color:#000">h4</span>&gt;<span style="color:#888;font-style:italic">&lt;!--次要內容( &lt;mark&gt;、&lt;time&gt; )--&gt;</span>&lt;/<span style="color:#000">h4</span>&gt;
+    &lt;/<span style="color:#000">hgroup</span>&gt;
+    &lt;<span style="color:#000">nav</span>&gt;
+      &lt;<span style="color:#000">ul</span>&gt;<span style="color:#888;font-style:italic">&lt;!--導覽列項目--&gt;</span>&lt;/<span style="color:#000">ul</span>&gt;
+      &lt;<span style="color:#000">details</span>&gt;<span style="color:#888;font-style:italic">&lt;!--收折項目--&gt;</span>&lt;/<span style="color:#000">details</span>&gt;
+    &lt;/<span style="color:#000">nav</span>&gt;
+  &lt;/<span style="color:#000">header</span>&gt;
+
+  <span style="color:#888;font-style:italic">&lt;!--內容--&gt;</span>
+  &lt;<span style="color:#000">section</span>&gt;
+    &lt;<span style="color:#000">article</span>&gt;
+      &lt;<span style="color:#000">section</span>&gt;<span style="color:#888;font-style:italic">&lt;!--文字區塊--&gt;</span>&lt;/<span style="color:#000">section</span>&gt;
+      &lt;<span style="color:#000">aside</span>&gt;<span style="color:#888;font-style:italic">&lt;!--圖片側邊欄( &lt;figure&gt;、&lt;figcaption&gt; )--&gt;</span>&lt;/<span style="color:#000">aside</span>&gt;
+    &lt;/<span style="color:#000">article</span>&gt;
+    &lt;<span style="color:#000">article</span>&gt;…&lt;/<span style="color:#000">article</span>&gt;
+    &lt;<span style="color:#000">article</span>&gt;…&lt;/<span style="color:#000">article</span>&gt;
+  &lt;/<span style="color:#000">section</span>&gt;
+
+  <span style="color:#888;font-style:italic">&lt;!--頁尾--&gt;</span>
+  &lt;<span style="color:#000">footer</span>&gt;<span style="color:#888;font-style:italic">&lt;!--聯絡資訊( &lt;address&gt; )--&gt;</span>&lt;<span style="color:#000">footer</span>&gt;
+
+&lt;/<span style="color:#000">main</span>&gt;
+</code></pre></div><h3 id="樣式"><strong>樣式</strong></h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f00">…</span>
+<span style="color:#888;font-style:italic">/* 畫面置中 */</span>
+<span style="color:#000">main</span>{ 
+  <span style="color:#00f">width</span>: <span style="color:#3af">640</span><span style="color:#00f">px</span>;
+  <span style="color:#00f">border</span>: <span style="color:#3af">1</span><span style="color:#00f">px</span> <span style="color:#00f">solid</span> <span style="color:#000">var</span>(--<span style="color:#00f">black</span><span style="color:#3af">-50</span>);
+  <span style="color:#00f">margin</span>: <span style="color:#000">var</span>(--<span style="color:#00f">space</span>) <span style="color:#00f">auto</span>;
+  <span style="color:#f00">…</span>
+}
+<span style="color:#f00">…</span>
+<span style="color:#888;font-style:italic">/* 導覽列項目橫向排列 */</span>
+#<span style="color:#000">header</span> <span style="color:#000">nav</span> {
+  <span style="color:#00f">height</span>: <span style="color:#3af">1.5</span><span style="color:#00f">em</span>;
+  <span style="color:#f00">…</span>
+}
+#<span style="color:#000">header</span> <span style="color:#000">nav</span> <span style="color:#000">ul</span> {
+  <span style="color:#00f">overflow</span>: <span style="color:#00f">hidden</span>;
+  <span style="color:#f00">…</span>
+}
+#<span style="color:#000">header</span> <span style="color:#000">nav</span> <span style="color:#000">li</span> {
+  <span style="color:#00f">float</span>: <span style="color:#00f">left</span>;
+  <span style="color:#f00">…</span>
+}
+<span style="color:#f00">…</span>
+<span style="color:#888;font-style:italic">/* 收折項目橫向排列 */</span>
+#<span style="color:#000">header</span> <span style="color:#000">nav</span> <span style="color:#000">ul</span>, #<span style="color:#000">header</span> <span style="color:#000">nav</span> <span style="color:#000">details</span> {
+  <span style="color:#00f">float</span>: <span style="color:#00f">left</span>;
+  <span style="color:#00f">position</span>: <span style="color:#00f">relative</span>;
+  <span style="color:#f00">…</span>
+}
+#<span style="color:#000">header</span> <span style="color:#000">nav</span> <span style="color:#000">details</span> <span style="color:#000">p</span> {
+  <span style="color:#00f">width</span>: <span style="color:#3af">100</span><span style="color:#00f">px</span>;
+  <span style="color:#00f">position</span>: <span style="color:#00f">absolute</span>;
+  <span style="color:#00f">left</span>: <span style="color:#3af">0</span>;
+  <span style="color:#00f">top</span>: <span style="color:#3af">1.2</span><span style="color:#00f">em</span>;
+  <span style="color:#f00">…</span>
+}
+<span style="color:#f00">…</span>
+<span style="color:#888;font-style:italic">/* 內容左右排版 */</span>
+<span style="color:#000">article</span> {
+  <span style="color:#00f">overflow</span>: <span style="color:#00f">hidden</span>;
+  <span style="color:#00f">text-align</span>: <span style="color:#00f">justify</span>;
+}
+<span style="color:#000">article</span>&gt;<span style="color:#000">section</span>{ <span style="color:#888;font-style:italic">/* 文字靠左 */</span>
+  <span style="color:#00f">float</span>: <span style="color:#00f">left</span>; 
+  <span style="color:#00f">width</span>: <span style="color:#3af">51</span><span style="color:#00f">%</span>;
+}
+<span style="color:#000">article</span>&gt;<span style="color:#000">aside</span> { <span style="color:#888;font-style:italic">/* 圖片靠右 */</span>
+  <span style="color:#00f">margin-left</span>: <span style="color:#3af">53</span><span style="color:#00f">%</span>;	
+}
+<span style="color:#f00">…</span>
+</code></pre></div><h3 id="程式碼"><strong>程式碼</strong></h3>
+<p><a target="_blank" href="https://codepen.io/miunote/pen/MWNrwKe" rel="noopener noreferrer">HTML5 card：news and events - CodePen</a>
+
+
+<br>
+<iframe height="500" style="width: 100%; margin-bottom: 0;" scrolling="no" title="note" src="https://codepen.io/miunote/embed/MWNrwKe?height=500&theme-id=light&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/miunote/pen/MWNrwKe'>note</a> by miunote
+  (<a href='https://codepen.io/miunote'>@miunote</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe></p>
+<p></p>
+
+        </div>
+      </div>   
+      
+
+
+      <div class="col-lg-3">
+
+        <div class="widget mt-4">       
+          <div class="list-group">
+            
+                        
+            <a href="https://miunote.github.io/book/miu005_web-base_jquery-mobile/" class="list-group-item list-group-item-action text-left"><span class="badge bg-secondary">Book</span> HTML5 &#43; CSS3 &#43; jQuery Mobile 輕鬆打造 App 與行動網站, 2/e</a>
+            
+
+            
+            <a href="https://miunote.github.io/blog/books_web-base_jquery-mobile_0104/" class="list-group-item list-group-item-action text-left">最新消息 活動公告</a>
+            
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="col-lg-8 mx-auto pt-4 mb-80 bg-white shadow">
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "miunote" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+
+    
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<script>
+  var indexURL = "https://miunote.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://miunote.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/search/mark.js"></script>
+
+<script src="https://miunote.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://miunote.github.io/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-177532986-1', 'auto');
+  ga('send', 'pageview');
+</script></body>
+</html>
