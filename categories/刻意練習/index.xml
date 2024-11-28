@@ -6,10 +6,19 @@
     <description>Recent content in 刻意練習 on MiuNote 個人習作</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 06 Nov 2024 07:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 28 Nov 2024 05:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://miunote.github.io/categories/%E5%88%BB%E6%84%8F%E7%B7%B4%E7%BF%92/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>漢堡選單 全螢幕主選單</title>
+      <link>https://miunote.github.io/blog/books_ui-example_css3-jquery_101/</link>
+      <pubDate>Thu, 28 Nov 2024 05:00:00 +0800</pubDate>
+      
+      <guid>https://miunote.github.io/blog/books_ui-example_css3-jquery_101/</guid>
+      <description>1-01 .toggleClass() 語法 : ( 添加/移除 Class Name )</description>
+    </item>
     
     <item>
       <title>最新消息 活動公告</title>

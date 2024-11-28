@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>JQuery 漢堡選單 全螢幕主選單 - MiuNote 個人習作</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="nav menu．1-01 .toggleClass()">
+  <meta name="author" content="Miu">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://miunote.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://miunote.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://miunote.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://miunote.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://miunote.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://miunote.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://miunote.github.io/images/favicon.png " type="image/x-icon">
+
+  
+  
+</head><body class=" border-bottom-img">
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent pl-0 d-flex align-items-start mt-4">
+      
+
+      <div class="col-lg-9">
+        
+        <div class="widget">
+          <ul class="list-inline">
+            <li class="shadow-sm list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                href="/tags/CSS">CSS</a></li>
+            <li class="shadow-sm list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                href="/tags/Graphic">Graphic</a></li>
+            <li class="shadow-sm list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                href="/tags/HTML5">HTML5</a></li>
+            <li class="shadow-sm list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                href="/tags/jQuery">jQuery</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        
+        <div class="widget">
+          <div class="logo-bg">
+            <p class="mb-3">
+              <a href="/" class="logo-link">MiuNote</a><span class="spacing-line"></span><a href="/about" class="logo-link">About</a><span class="spacing-line"></span><button id="searchOpen" class="search-btn search-btn-border-0"><i class="ti-search"></i></button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      
+
+      
+
+        
+
+        
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          
+          <div class="search-wrapper">
+            <form action="https://miunote.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+
+
+
+
+  </div>
+</header>
+<!-- /navigation -->
+
+
+<section class="mt-4">
+  <div class="container">
+    <div class="row">
+
+
+      <div class="col-lg-8 mx-auto bg-white pt-4 shadow mb-20">
+        
+        <a href="/categories/%e5%88%bb%e6%84%8f%e7%b7%b4%e7%bf%92"
+          class="text-primary">刻意練習</a>
+        
+        <h1>漢堡選單 全螢幕主選單．nav menu</h1>
+        <div class="mb-4 post-meta">
+          <span>By Miu</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>28 November 2024</span>
+                  
+          
+            
+            <span class="border-bottom border-primary px-2 mx-1"></span>  
+            <a href="/tags/jQuery" class="">JQuery</a>
+             
+           
+        </div>
+        
+        <img src="https://miunote.github.io/images/post/20241125-hamburger-menu-overlay.jpg" class="mb-4" alt="漢堡選單 全螢幕主選單">
+        
+        <div class="content mb-5">
+          <blockquote>
+<h2 id="a-href結構hahahugoshortcode-s0-hbhba"><a href="#結構">
+
+
+1-01 .toggleClass()
+
+
+
+
+</a></h2>
+<p><strong>語法 : ( 添加/移除 Class Name )</strong><br>
+- 在元素上「添加或移除」一個或多個 .class 名稱。<br>
+- 像切換開關 ( 切換 .class ) 一樣。<br>
+- .class 名稱 &ldquo;存在&rdquo; 時就移除它 ( 關閉掉 )，&ldquo;不存在&rdquo; 就添加回元素上 ( 重新打開 )。<br>
+<strong>實作 : ( 開啟/關閉 主選單 )</strong> <br>
+- 在主選單 <code>&lt;nav&gt;</code> 元素上<span class="text-primary">添加</span>「.is-open」來 display: block 顯示/開啟主選單。<br>
+- 在主選單 <code>&lt;nav&gt;</code> 元素上<span class="text-primary">移除</span>「.is-open」來 display: none 隱藏/關閉主選單。</p>
+</blockquote>
+<h3 id="結構"><strong>結構</strong></h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">...
+<span style="color:#888;font-style:italic">&lt;!--//導覽列--&gt;</span>
+&lt;<span style="color:#000">header</span>&gt;
+  &lt;<span style="color:#000">h1</span>&gt;<span style="color:#888;font-style:italic">&lt;!--標題--&gt;</span>&lt;/<span style="color:#000">h1</span>&gt;
+  &lt;<span style="color:#000">a</span>&gt;<span style="color:#888;font-style:italic">&lt;!--圖示( 返回 )--&gt;</span>&lt;/<span style="color:#000">a</span>&gt;
+  &lt;<span style="color:#000">button</span> <span style="color:#000">class</span>=<span style="color:#5a2">&#34;navbtn&#34;</span> <span style="color:#000">title</span>=<span style="color:#5a2">&#34;開啟選單&#34;</span>&gt;<span style="color:#888;font-style:italic">&lt;!--圖示( 漢堡選單 )--&gt;</span>&lt;/<span style="color:#000">button</span>&gt;
+  &lt;<span style="color:#000">button</span>&gt;<span style="color:#888;font-style:italic">&lt;!--圖示( 搜尋 )--&gt;</span>&lt;/<span style="color:#000">button</span>&gt;
+&lt;/<span style="color:#000">header</span>&gt;
+
+<span style="color:#888;font-style:italic">&lt;!--//主選單--&gt;</span>
+&lt;<span style="color:#000">nav</span> <span style="color:#000">class</span>=<span style="color:#5a2">&#34;is-open&#34;</span>&gt;
+  &lt;<span style="color:#000">button</span> <span style="color:#000">class</span>=<span style="color:#5a2">&#34;closebtn&#34;</span> <span style="color:#000">title</span>=<span style="color:#5a2">&#34;關閉選單&#34;</span>&gt;<span style="color:#888;font-style:italic">&lt;!--圖示( ✖ 符號 )--&gt;</span>&lt;/<span style="color:#000">button</span>&gt;
+  &lt;<span style="color:#000">ul</span>&gt;<span style="color:#888;font-style:italic">&lt;!--選單項目( 開始游戲、複習單字、新增單字卡 )--&gt;</span>&lt;/<span style="color:#000">ul</span>&gt;
+&lt;/<span style="color:#000">nav</span>&gt;
+...
+</code></pre></div><h3 id="樣式"><strong>樣式</strong></h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f00">…</span>
+<span style="color:#000">nav</span> {
+  <span style="color:#f00">…</span>
+  <span style="color:#00f">position</span>: <span style="color:#00f">fixed</span>;
+  <span style="color:#f00">…</span>
+  <span style="color:#00f">display</span>: <span style="color:#00f">none</span>; <span style="color:#888;font-style:italic">/* 關閉主選單 */</span>
+  <span style="color:#f00">…</span>
+} 
+<span style="color:#000">nav</span>.<span style="color:#000">is-open</span> {
+  <span style="color:#00f">display</span>: <span style="color:#00f">block</span>; <span style="color:#888;font-style:italic">/* 開啟主選單 */</span>
+}
+<span style="color:#f00">…</span>
+</code></pre></div><h3 id="互動"><strong>互動</strong></h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000">$</span>(<span style="color:#00f">function</span> () {
+  <span style="color:#000">$</span>(<span style="color:#5a2">&#39;header .navbtn, nav .closebtn&#39;</span>).<span style="color:#000">on</span>(<span style="color:#5a2">&#39;click&#39;</span>, <span style="color:#00f">function</span> () { <span style="color:#888;font-style:italic">// 點擊導覽列的漢堡選單按鈕或主選單的關閉按鈕，
+</span><span style="color:#888;font-style:italic"></span>    <span style="color:#000">$</span>(<span style="color:#5a2">&#39;nav&#39;</span>).<span style="color:#000">toggleClass</span>(<span style="color:#5a2">&#39;is-open&#39;</span>); <span style="color:#888;font-style:italic">// 來切換(顯示/隱藏)主選單。
+</span><span style="color:#888;font-style:italic"></span>
+    <span style="color:#888;font-style:italic">// $(&#39;nav&#39;).slideToggle(&#39;is-open&#39;);  // 使用「上下滑動」效果來切換(顯示/隱藏)主選單
+</span><span style="color:#888;font-style:italic"></span>  });
+});
+</code></pre></div><h3 id="程式碼"><strong>程式碼</strong></h3>
+<p><a target="_blank" href="https://codepen.io/miunote/pen/PoMVaby" rel="noopener noreferrer">JQuery nav menu：fullscreen overlay navigation menu - CodePen</a>
+
+
+<br>
+<iframe height="500" style="width: 100%; margin-bottom: 0;" scrolling="no" title="note" src="https://codepen.io/miunote/embed/PoMVaby?height=500&theme-id=light&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/miunote/pen/PoMVaby'>note</a> by miunote
+  (<a href='https://codepen.io/miunote'>@miunote</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe></p>
+<p></p>
+<h3 id="語法"><strong>語法</strong></h3>
+<p><a target="_blank" href="https://jquery-api.dev.org.tw/toggleClass/" rel="noopener noreferrer">.toggleClass() - jQuery API 文件</a>
+
+
+<br>
+<a target="_blank" href="https://jquery-api.dev.org.tw/slideToggle/" rel="noopener noreferrer">.slideToggle() - jQuery API 文件</a>
+
+
+<br>
+<strong>補充</strong><br>
+- <a target="_blank" href="https://blog.ruoshin.wang/post/120782312807/addclass-jquery-css" rel="noopener noreferrer">toggleClass—新手一步一腳印之簡單用jQuery控制CSS - Tedious Life</a>
+
+
+<br>
+- <a target="_blank" href="https://hsuchihting.github.io/jQuery/20200609/184811241/" rel="noopener noreferrer">jQuery 筆記 - 選擇器的選法與基本動畫效果語法 - TimCodingBlog</a>
+
+
+<br>
+- <a target="_blank" href="https://www.cnblogs.com/sqh17/p/7746418.html" rel="noopener noreferrer">jQuery的差別：$().click()和(document).on(&#39;click&#39;, ... - 熱愛前端的17號誒 - 博客園</a>
+
+
+<br>
+- <a target="_blank" href="https://ithelp.ithome.com.tw/questions/10191601" rel="noopener noreferrer">jquery click 事件的長相差別？ - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天</a>
+
+
+</p>
+<h3 id="其它"><strong>其它</strong></h3>
+<p><a target="_blank" href="https://vocus.cc/article/66beacd2fd8978000126e4a6" rel="noopener noreferrer">關於網站主選單的四種類型｜關於那個三條線按鈕 - 筱涵｜Hannah的沙龍</a>
+
+
+<br>
+<a target="_blank" href="https://www.youtube.com/shorts/CKVnZ4Cq23U" rel="noopener noreferrer">Transforming Borders into Cool CSS Triangles | Quick Tutorial - Optimistic Web</a>
+
+
+</p>
+
+        </div>
+      </div>   
+      
+
+
+      <div class="col-lg-3">
+
+        <div class="widget mt-4">       
+          <div class="list-group">
+            
+                        
+            <a href="https://miunote.github.io/book/miu006_ui-example_jquery-base/" class="list-group-item list-group-item-action text-left"><span class="badge bg-secondary">Book</span> 快速查，馬上用！ CSS3＋jQuery 手機網站 UI 範例實作</a>
+            
+
+            
+            <a href="https://miunote.github.io/blog/books_ui-example_css3-jquery_101/" class="list-group-item list-group-item-action text-left">漢堡選單 全螢幕主選單</a>
+            
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="col-lg-8 mx-auto pt-4 mb-80 bg-white shadow">
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "miunote" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+
+    
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<script>
+  var indexURL = "https://miunote.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://miunote.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://miunote.github.io/plugins/search/mark.js"></script>
+
+<script src="https://miunote.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://miunote.github.io/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-177532986-1', 'auto');
+  ga('send', 'pageview');
+</script></body>
+</html>
