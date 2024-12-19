@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-tw"><head>
   <meta charset="utf-8">
-  <title>CSS 側滑列表 - MiuNote 個人習作</title>
+  <title>CSS 井字遊戲 - MiuNote 個人習作</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="list．04-20 :focus-within">
+  <meta name="description" content="image sprites．04-18 :read-only">
   <meta name="author" content="Miu">
   <meta name="generator" content="Hugo 0.74.3" />
 
@@ -116,12 +116,12 @@
         <a href="/categories/%e5%88%bb%e6%84%8f%e7%b7%b4%e7%bf%92"
           class="text-primary">刻意練習</a>
         
-        <h1>側滑列表．list</h1>
+        <h1>井字遊戲．image sprites</h1>
         <div class="mb-4 post-meta">
           <span>By Miu</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>09 July 2021</span>
+          <span>18 December 2024</span>
                   
           
             
@@ -131,93 +131,116 @@
            
         </div>
         
-        <img src="https://miunote.github.io/images/post/20210704-swipe-list.png" class="mb-4" alt="側滑列表">
+        <img src="https://miunote.github.io/images/post/20241218-tic-tac-toe.jpg" class="mb-4" alt="井字遊戲">
         
         <div class="content mb-5">
           <blockquote>
 <h2 id="a-href結構hahahugoshortcode-s0-hbhba"><a href="#結構">
 
 
-04-20 :focus-within
+04-18 :read-only
 
 
 
 
 </a></h2>
-<p><strong>子元素控制父元素:</strong><br>
-子元素 focus 狀態時，會觸發父元素 :focus-within 狀態<br>
-<strong>具 focus 的元素:</strong><br>
-<code>&lt;a href=&quot;#&quot;&gt;</code> <code>&lt;button&gt;</code> <code>&lt;input&gt;</code> <code>&lt;select&gt;</code> <code>&lt;div tabindex=&quot;0&quot;&gt;</code><br>
-<strong>模擬 onclick:</strong><br>
-使用 focus 模擬 onclick 互動效果</p>
+<p><strong>輸入框「可讀」不能寫 :</strong><br>
+<code>&lt;input type=&quot;text&quot;&gt;</code> 使用 read-only 屬性來設定「積分」欄位為唯讀狀態。<br>
+<strong>九宮格裡的 X、O 圖示 :</strong><br>
+使用 CSS 圖片精靈 ( CSS Image Sprites )，將四張小圖示 ( X圖、O圖、X半遮罩圖、O半遮罩圖 ) 合併進同一張大圖中，以「CSS 定位」單獨顯示各張小圖示。<br>
+<strong>CSS 圖片精靈 ( CSS Image Sprites ) 生成工具 :</strong><br>
+圖片精靈製作參考 <a target="_blank" href="https://www.toptal.com/developers/css/sprite-generator" rel="noopener noreferrer">CSS Sprites Generator Tool | Toptal®</a>
+
+
+ 工具。</p>
 </blockquote>
 <h3 id="結構"><strong>結構</strong></h3>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">...
-&lt;<span style="color:#000">section</span>&gt;
-  &lt;<span style="color:#000">ul</span>&gt;
-    ...
-    &lt;<span style="color:#000">li</span>&gt;
-      &lt;<span style="color:#000">div</span> <span style="color:#000">class</span>=<span style="color:#5a2">&#34;text&#34;</span>&gt;文字內容 文字內容 文字內容&lt;/<span style="color:#000">div</span>&gt;
-      &lt;<span style="color:#000">div</span> <span style="color:#000">class</span>=<span style="color:#5a2">&#34;icon&#34;</span>&gt;&lt;<span style="color:#000">a</span> <span style="color:#000">href</span>=<span style="color:#5a2">&#34;#&#34;</span>&gt;&lt;<span style="color:#000">i</span>&gt;❮&lt;/<span style="color:#000">i</span>&gt;&lt;/<span style="color:#000">a</span>&gt;&lt;<span style="color:#000">a</span> <span style="color:#000">href</span>=<span style="color:#5a2">&#34;#&#34;</span>&gt;&lt;<span style="color:#000">i</span>&gt;✎&lt;/<span style="color:#000">i</span>&gt;&lt;/<span style="color:#000">a</span>&gt;&lt;<span style="color:#000">a</span> <span style="color:#000">href</span>=<span style="color:#5a2">&#34;#&#34;</span>&gt;&lt;<span style="color:#000">i</span>&gt;✖&lt;/<span style="color:#000">i</span>&gt;&lt;/<span style="color:#000">a</span>&gt;&lt;/<span style="color:#000">div</span>&gt;
-    &lt;/<span style="color:#000">li</span>&gt;
-    ...
-  &lt;/<span style="color:#000">ul</span>&gt;
-&lt;/<span style="color:#000">section</span>&gt;
+<span style="color:#888;font-style:italic">&lt;!--//選擇 X、O --&gt;</span>
+&lt;<span style="color:#000">form</span> <span style="color:#000">action</span>=<span style="color:#5a2">&#34;&#34;</span>&gt;
+  &lt;<span style="color:#000">div</span> <span style="color:#000">id</span>=<span style="color:#5a2">&#34;x&#34;</span> <span style="color:#f00">…</span>&gt;
+    &lt;<span style="color:#000">img</span> <span style="color:#000">src</span>=<span style="color:#5a2">&#34;…/x_s.png&#34;</span> <span style="color:#f00">…</span>&gt; 
+    &lt;<span style="color:#000">input</span> <span style="color:#000">type</span>=<span style="color:#5a2">&#34;text&#34;</span> <span style="color:#f00">…</span> <span style="color:#000">class</span>=<span style="color:#5a2">&#34;input-txt&#34;</span> <span style="color:#000">readonly</span>&gt;
+  &lt;/<span style="color:#000">div</span>&gt;
+  &lt;<span style="color:#000">div</span> <span style="color:#000">id</span>=<span style="color:#5a2">&#34;o&#34;</span> <span style="color:#f00">…</span>&gt;
+    &lt;<span style="color:#000">img</span> <span style="color:#000">src</span>=<span style="color:#5a2">&#34;…/o_s.png&#34;</span> <span style="color:#f00">…</span>&gt;
+    &lt;<span style="color:#000">input</span> <span style="color:#000">type</span>=<span style="color:#5a2">&#34;text&#34;</span> <span style="color:#f00">…</span> <span style="color:#000">class</span>=<span style="color:#5a2">&#34;input-txt&#34;</span> <span style="color:#000">readonly</span>&gt;
+  &lt;/<span style="color:#000">div</span>&gt; 
+&lt;/<span style="color:#000">form</span>&gt;
+
+<span style="color:#888;font-style:italic">&lt;!--//井字九宮格--&gt;</span>
+&lt;<span style="color:#000">ul</span>&gt;
+  &lt;<span style="color:#000">li</span> <span style="color:#000">class</span>=<span style="color:#5a2">&#34;bg-x&#34;</span>&gt;&lt;/<span style="color:#000">li</span>&gt;<span style="color:#888;font-style:italic">&lt;!--背景圖( X 圖 )--&gt;</span>
+  &lt;<span style="color:#000">li</span> <span style="color:#000">class</span>=<span style="color:#5a2">&#34;bg-o&#34;</span>&gt;&lt;/<span style="color:#000">li</span>&gt;<span style="color:#888;font-style:italic">&lt;!--背景圖( O 圖 )--&gt;</span>  
+  &lt;<span style="color:#000">li</span>&gt;&lt;/<span style="color:#000">li</span>&gt;<span style="color:#888;font-style:italic">&lt;!--空白--&gt;</span>
+  ...
+&lt;/<span style="color:#000">ul</span>&gt;
+
+<span style="color:#888;font-style:italic">&lt;!--//按鈕--&gt;</span>
+&lt;<span style="color:#000">button</span>&gt;再玩一次&lt;/<span style="color:#000">button</span>&gt;
 ...
 </code></pre></div><h3 id="樣式"><strong>樣式</strong></h3>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f00">…</span>
-<span style="color:#000">li</span>:<span style="color:#000">focus-within</span>{
-  <span style="color:#888;font-style:italic">/* 父元素: 列表項目（li） */</span>
-  <span style="color:#00f">transform</span>: <span style="color:#000">translateX</span>( <span style="color:#000">var</span>(--<span style="color:#00f">icon</span>-<span style="color:#000">x</span>-<span style="color:#00f">start</span>) );
-  <span style="color:#00f">background-color</span>: <span style="color:#000">var</span>(--<span style="color:#00f">black</span><span style="color:#3af">-10</span>)
+<span style="color:#888;font-style:italic">/* 圖片精靈 CSS 定位 */</span>
+.<span style="color:#000">bg-o</span> {  
+  <span style="color:#00f">background</span>: <span style="color:#000">url</span>(<span style="color:#5a2">&#39;…/css_sprites_s.png&#39;</span>) <span style="color:#3af">-2</span><span style="color:#00f">px</span> <span style="color:#3af">-2</span><span style="color:#00f">px</span>; <span style="color:#888;font-style:italic">/* O圖 */</span>
+}
+.<span style="color:#000">bg-o</span>:<span style="color:#000">hover</span> { 
+  <span style="color:#00f">background</span>: <span style="color:#000">url</span>(<span style="color:#5a2">&#39;…/css_sprites_s.png&#39;</span>) <span style="color:#3af">-39</span><span style="color:#00f">px</span> <span style="color:#3af">-3</span><span style="color:#00f">px</span>; <span style="color:#888;font-style:italic">/* O半遮罩圖 */</span> 
+}
+.<span style="color:#000">bg-x</span> { 
+  <span style="color:#00f">background</span>: <span style="color:#000">url</span>(<span style="color:#5a2">&#39;…/css_sprites_s.png&#39;</span>) <span style="color:#3af">-2</span><span style="color:#00f">px</span> <span style="color:#3af">-38</span><span style="color:#00f">px</span>; <span style="color:#888;font-style:italic">/* X圖 */</span> 
+}
+.<span style="color:#000">bg-x</span>:<span style="color:#000">hover</span> { 
+  <span style="color:#00f">background</span>: <span style="color:#000">url</span>(<span style="color:#5a2">&#39;…/css_sprites_s.png&#39;</span>) <span style="color:#3af">-39</span><span style="color:#00f">px</span> <span style="color:#3af">-39</span><span style="color:#00f">px</span>; <span style="color:#888;font-style:italic">/* X半遮罩圖 */</span> 
 }
 <span style="color:#f00">…</span>
-<span style="color:#000">li</span> .<span style="color:#000">icon</span> <span style="color:#000">a</span>:<span style="color:#000">focus</span>{
-  <span style="color:#888;font-style:italic">/* 子元素: 列表項目的箭頭圖示（❮） */</span>
-  <span style="color:#00f">background-color</span>: <span style="color:#000">var</span>(--<span style="color:#00f">black</span><span style="color:#3af">-30</span>);
-  <span style="color:#00f">color</span>: <span style="color:#3af">#fff</span>;  
-} 
+<span style="color:#888;font-style:italic">/* 輸入框-基礎樣式 */</span>
+.<span style="color:#000">input-txt</span>{   
+  <span style="color:#00f">width</span>: <span style="color:#f00">…</span> ;
+  <span style="color:#00f">text-align</span>: <span style="color:#f00">…</span> ;
+  <span style="color:#00f">color</span>: <span style="color:#f00">…</span> ;
+}
+<span style="color:#888;font-style:italic">/* 輸入框-唯讀樣式 */</span>
+.<span style="color:#000">input-txt</span>:<span style="color:#000">read-only</span> {  
+  <span style="color:#00f">border-color</span>: <span style="color:#00f">transparent</span>; <span style="color:#888;font-style:italic">/* 透明邊框線 */</span>
+  <span style="color:#00f">background-color</span>: <span style="color:#00f">transparent</span>; <span style="color:#888;font-style:italic">/* 透明背景色 */</span>
+  <span style="color:#00f">outline</span>: <span style="color:#3af">0</span>; <span style="color:#888;font-style:italic">/* 移除 focus 外框線 */</span>
+}
+<span style="color:#f00">…</span>
 </code></pre></div><h3 id="程式碼"><strong>程式碼</strong></h3>
-<p><a target="_blank" href="https://codepen.io/miunote/pen/KKmwqWG" rel="noopener noreferrer">CSS list：swipe list - CodePen</a>
+<p><a target="_blank" href="https://codepen.io/miunote/pen/azoOOoB" rel="noopener noreferrer">CSS image sprites：tic-tac-toe game - CodePen</a>
 
 
 <br>
-<iframe height="500" style="width: 100%; margin-bottom: 0;" scrolling="no" title="note" src="https://codepen.io/miunote/embed/KKmwqWG?height=500&theme-id=light&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/miunote/pen/KKmwqWG'>note</a> by miunote
+<iframe height="500" style="width: 100%; margin-bottom: 0;" scrolling="no" title="note" src="https://codepen.io/miunote/embed/azoOOoB?height=500&theme-id=light&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/miunote/pen/azoOOoB'>note</a> by miunote
   (<a href='https://codepen.io/miunote'>@miunote</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe></p>
 <p></p>
 <h3 id="語法"><strong>語法</strong></h3>
-<p><a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/:focus-within" rel="noopener noreferrer">:focus-within - MDN</a>
-
-
-<br>
-<a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/:focus" rel="noopener noreferrer">:focus - MDN</a>
+<p><a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/:read-only" rel="noopener noreferrer">:read-only - MDN</a>
 
 
 <br>
 <strong>補充</strong><br>
-- <a target="_blank" href="https://bitsofco.de/how-and-when-to-use-the-tabindex-attribute/#howtousetabindex" rel="noopener noreferrer">How and when to use the tabindex attribute - bitsofcode</a>
-
-
-（用tabindex屬性來設定Tab鍵順序）<br>
-- <a target="_blank" href="https://www.cnblogs.com/coco1s/p/9406413.html" rel="noopener noreferrer">神奇的选择器 :focus-within - ChokCoco</a>
+- <a target="_blank" href="https://whirlwindwing99.pixnet.net/blog/post/360842918" rel="noopener noreferrer">資料就是回不來!Readonly與Disabled無法送回後台 - 聆風之境</a>
 
 
 <br>
-- <a target="_blank" href="https://www.zhangxinxu.com/wordpress/2018/01/css-focus-within-pseudo-class-selector/" rel="noopener noreferrer">详细了解CSS :focus-within伪类及其交互应用 - 张鑫旭</a>
+- <a target="_blank" href="https://codepen.io/miunote/pen/KwPaKmB" rel="noopener noreferrer">( CodePen ) readonly and disabled - miunote</a>
+
+
+<br>
+- <a target="_blank" href="https://www.youtube.com/watch?v=3k1I4KJKdK4" rel="noopener noreferrer">HTML &amp; CSS - Using Image Sprites - mjdwebdesign</a>
 
 
 </p>
 <h3 id="瀏覽器相容"><strong>瀏覽器相容</strong></h3>
-<p><a target="_blank" href="https://caniuse.com/css-focus-within" rel="noopener noreferrer">:focus-within 後代焦點狀態 - CanIuse</a>
+<a target="_blank" href="https://caniuse.com/?search=%3Aread-only" rel="noopener noreferrer">:read-only 輸入框可讀不能寫 ( 唯讀欄位 ) - CanIuse</a>
 
 
-<br>
-<a target="_blank" href="https://caniuse.com/mdn-css_selectors_focus" rel="noopener noreferrer">:focus 焦點狀態 - CanIuse</a>
 
-
-</p>
 
         </div>
       </div>   

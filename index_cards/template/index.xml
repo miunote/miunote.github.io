@@ -6,10 +6,20 @@
     <description>Recent content in template on MiuNote 個人習作</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 28 Nov 2024 05:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 18 Dec 2024 05:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://miunote.github.io/index_cards/template/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>井字遊戲</title>
+      <link>https://miunote.github.io/blog/books_goldfish_css-selector_0418/</link>
+      <pubDate>Wed, 18 Dec 2024 05:00:00 +0800</pubDate>
+      
+      <guid>https://miunote.github.io/blog/books_goldfish_css-selector_0418/</guid>
+      <description>04-18 :read-only 輸入框「可讀」不能寫 :
+&amp;lt;input type=&amp;quot;text&amp;quot;&amp;gt; 使用 read-only 屬性來設定「積分」欄位為唯讀狀態。</description>
+    </item>
     
     <item>
       <title>漢堡選單 全螢幕主選單</title>
